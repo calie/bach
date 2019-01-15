@@ -2,21 +2,41 @@
     <head>
         <style>
             body{
-                background:#efefef;
+                background: url(https://s3.amazonaws.com/s3.kjkkfm.radio.com/styles/delta__775x515/s3/dreamstime_xl_31534072.jpg?itok=QZm6VZOB&c=09ca564f3b6d69d9a39bdea164245d00) fixed no-repeat top right;
+
                 font-family: Helvetica, arial;
+
             }
             .container{
                 width: fit-content;
                 margin: 0 auto;
+                background: #fff;
+            }
+            .header{
+                width: 100%;
+                height: 300px;
+            }
+            .header-image{
+                
+                
             }
             .player{
                 float: left;
                 padding: 20px;
                 text-align: center;
             }
-            .player h2, .score{
+            .player h2{
                 text-align: center;
                 margin-bottom: 5px;
+                font-size: ;
+                color: #666;
+                border-bottom: 1px solid red;
+            }
+            .score{
+                text-align: center;
+                margin-bottom: 5px;
+                font-size: 50px;
+                color: #444;
             }
             button{
                 padding: 5px 10px;
@@ -29,35 +49,33 @@
     </head>
     <body>
     <div class="container">
+        
         <section class="player">
             <h2>Calie</h2>
             <img/>
-            <div id="caliescore" class="score"></div>
-            <button>View Picks</button>
+          <div id="caliescore" class="score"></div>
         </section>
         <section class="player">
             <h2>James</h2>
             <img/>
             <div class="score" id="jamesscore"></div>
-            <button>View Picks</button>
         </section>
         <section class="player">
             <h2>Javi</h2>
             <img/>
             <div class="score" id="javiscore"></div>
-            <button>View Picks</button>
+
         </section>
         <section class="player">
             <h2>Jess</h2>
             <img/>
             <div class="score" id="jessscore"></div>
-            <button>View Picks</button>
+
         </section>
         <section class="player">
                 <h2>Vanessa</h2>
                 <img/>
                 <div class="score" id="vscore"></div>
-                <button>View Picks</button>
             </section>
     </div>
     <script src="bachelor.js"></script>
