@@ -61,7 +61,7 @@ var tayshia = new Contestant(22, "Tayshia", 8, 4, 10, 26, 13,true, 4
 );
 var revian = new Contestant(23, "Revian", 7, 3, 16, 2, 15, false, 0
 );
-var angelique = new Contestant(24, "Angelique", 6, 1, 0, 1, 7, true,1 
+var angelique = new Contestant(24, "Angelique", 6, 1, 0, 1, 7, true, 1 
 );
 var court = new Contestant(25, "Courtney", 5, 14, 11, 13, 7, false, 3
 );
@@ -169,7 +169,7 @@ function createCalieList(){
             return arr.calie === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 3){
+        if(list.weeksactive < 4){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.calie + '</td></tr>';
         }
         else{
@@ -182,13 +182,12 @@ function createCalieList(){
 
 function createVanessaList(){
     var html;
-    for(i=29; i <= 29 && i >= 0; i--){
+    for(i=29; i <= 29 && i >= 7; i--){
         function isI(arr) { 
             return arr.vanessa === i+1;
         }
         var list = contestantsArray.find(isI); 
-        console.log(list);
-        if(list.weeksactive < 3){
+        if(list.weeksactive < 4){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
         }
         else{
@@ -205,8 +204,7 @@ function createJamesList(){
             return arr.james === i+1;
         }
         var list = contestantsArray.find(isI); 
-        console.log(list);
-        if(list.weeksactive < 3){
+        if(list.weeksactive < 4){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.james + '</td></tr>';
         }
         else{
@@ -216,16 +214,32 @@ function createJamesList(){
     document.getElementById('jamesDOMlist').innerHTML+= html;
 }
 
-function createJaviList(){
+function createJessList(){
     var html;
     for(i=29; i <= 29 && i >= 0; i--){
+        function isI(arr) { 
+            return arr.jess === i+1;
+        }
+        var list = contestantsArray.find(isI); 
+        if(list.weeksactive < 4){
+            html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.jess + '</td></tr>';
+        }
+        else{
+            html += '<tr><td>'+list.first + '</td><td>' + list.jess + '</td></tr>';
+        }
+    }
+    document.getElementById('jessDOMlist').innerHTML+= html;
+}
+
+function createJaviList(){
+    var html;
+    for(i=29; i <= 29 && i >= 12; i--){
         function isI(arr) { 
             return arr.javi === i+1;
         }
         var list = contestantsArray.find(isI); 
-        console.log(list);
-        if(list.weeksactive < 3){
-            html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.james + '</td></tr>';
+        if(list.weeksactive < 4){
+            html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.javi + '</td></tr>';
         }
         else{
             html += '<tr><td>'+list.first + '</td><td>' + list.javi + '</td></tr>';
@@ -235,10 +249,11 @@ function createJaviList(){
 }
 
 
-//createCalieList();
-//createVanessaList();
-//createJamesList();
-//createJaviList();
+createCalieList();
+createVanessaList();
+createJamesList();
+createJessList();
+createJaviList();
 
 document.getElementById('caliescore').innerHTML = calculateCalieScore();
 document.getElementById('jamesscore').innerHTML = calculateJamesScore();
