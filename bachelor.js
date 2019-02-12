@@ -17,17 +17,17 @@ var alexB = new Contestant(0, "Alex B", 30, 27, 0, 17, 0, true, 1
 );
 var caitlin = new Contestant(1, "Caitlin", 29, 29, 25, 14, 0, true, 2
 );
-var hannahB = new Contestant(2, "Hannah B", 28, 30, 26, 30, 30, true, 4
+var hannahB = new Contestant(2, "Hannah B", 28, 30, 26, 30, 30, true, 5
 );
-var cassie = new Contestant(3, "Cassie", 27, 24, 22, 24, 29, true, 4
+var cassie = new Contestant(3, "Cassie", 27, 24, 22, 24, 29, true, 5
 );
-var caelynn = new Contestant(4, "Caelynn", 26, 25, 28, 28, 28, true, 4
+var caelynn = new Contestant(4, "Caelynn", 26, 25, 28, 28, 28, true, 5
 );
-var demi = new Contestant(5, "Demi", 25, 21, 23, 20, 18, true, 4
+var demi = new Contestant(5, "Demi", 25, 21, 23, 20, 18, true, 5
 );
 var laura = new Contestant(6, "Laura", 24, 16, 29, 11, 27, false, 0
 );
-var hannahG = new Contestant(7, "Hannah G", 23, 18, 15, 27, 26, true, 4
+var hannahG = new Contestant(7, "Hannah G", 23, 18, 15, 27, 26, true, 5
 );
 var bri = new Contestant(8, "Bri", 22, 23, 27, 22, 12, true, 2
 );
@@ -43,21 +43,21 @@ var annie = new Contestant(13, "Annie", 17, 26, 0, 29, 0, true, 1
 );
 var nina = new Contestant(14, "Nina", 16, 7, 17, 21, 22, true, 2
 );
-var kirpa = new Contestant(15, "Kirpa", 15, 9, 18, 3, 11, true, 4
+var kirpa = new Contestant(15, "Kirpa", 15, 9, 18, 3, 11, true, 5
 );
 var tracy = new Contestant(16, "Tracy", 14, 2, 19, 7, 0, true, 3
 );
-var sydney = new Contestant(17, "Sydney", 13, 15, 9, 8, 25, true, 4
+var sydney = new Contestant(17, "Sydney", 13, 15, 9, 8, 25, true, 5
 );
 var nicole = new Contestant(18, "Nicole", 12, 10, 14, 9, 21, true, 4
 );
-var heather = new Contestant(19, "Heather", 11, 11, 0, 5, 8, true, 4
+var heather = new Contestant(19, "Heather", 11, 11, 0, 5, 8, true, 5
 );
 var erika = new Contestant(20, "Erika", 10, 17, 21, 15, 20, true, 1
 );
 var elyse = new Contestant(21, "Elyse", 9, 12, 13, 23, 19, true, 4
 );
-var tayshia = new Contestant(22, "Tayshia", 8, 4, 10, 26, 13,true, 4
+var tayshia = new Contestant(22, "Tayshia", 8, 4, 10, 26, 13,true, 5
 );
 var revian = new Contestant(23, "Revian", 7, 3, 16, 2, 15, false, 0
 );
@@ -69,7 +69,7 @@ var devin = new Contestant(26, "Devin", 4, 19, 8, 12, 17, false, 0
 );
 var tahzjuan = new Contestant(27, "Tahjuan", 3, 5, 0, 4, 9, false, 0
 );
-var katie = new Contestant(28, "Katie", 2, 8, 0, 10, 10, true, 4
+var katie = new Contestant(28, "Katie", 2, 8, 0, 10, 10, true, 5
 );
 var onyeka = new Contestant(29, "Onyeka", 1, 6, 0, 19, 14, true, 4
 );
@@ -169,7 +169,8 @@ function createCalieList(){
             return arr.calie === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 4){
+        console.log(list);
+        if(list.weeksactive < 5){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.calie + '</td></tr>';
         }
         else{
@@ -178,21 +179,25 @@ function createCalieList(){
         
     }
     document.getElementById('caliesDOMlist').innerHTML+= html;
+    
 }
 
 function createVanessaList(){
     var html;
-    for(i=29; i <= 29 && i >= 7; i--){
-        function isI(arr) { 
-            return arr.vanessa === i+1;
-        }
-        var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 4){
-            html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
-        }
-        else{
-            html += '<tr ><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
-        }
+    for(i=29; i <= 29 && i >= 6; i--){
+       
+            function isI(arr) { 
+                return arr.vanessa === i+1;
+            }
+            
+            var list = contestantsArray.find(isI); 
+
+            if(list.weeksactive < 5){
+                html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
+            }
+            else{
+                html += '<tr ><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
+            }
     }
     document.getElementById('vanessaDOMlist').innerHTML+= html;
 }
@@ -201,10 +206,13 @@ function createJamesList(){
     var html;
     for(i=29; i <= 29 && i >= 0; i--){
         function isI(arr) { 
-            return arr.james === i+1;
+            return arr.james === i+1;            
         }
+    
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 4){
+
+
+        if(list.weeksactive < 5){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.james + '</td></tr>';
         }
         else{
@@ -221,7 +229,7 @@ function createJessList(){
             return arr.jess === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 4){
+        if(list.weeksactive < 5){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.jess + '</td></tr>';
         }
         else{
@@ -238,7 +246,7 @@ function createJaviList(){
             return arr.javi === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 4){
+        if(list.weeksactive < 5){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.javi + '</td></tr>';
         }
         else{
