@@ -1,6 +1,5 @@
 var contestantsArray = [];
 
-
 function Contestant(id, first, caliescore, jamesscore, javiscore, jessscore, vanessascore, active, weeksactive) {
     this.id = id;
     this.first = first;
@@ -13,99 +12,99 @@ function Contestant(id, first, caliescore, jamesscore, javiscore, jessscore, van
     this.weeksactive = weeksactive;
   }
 
-var alexB = new Contestant(0, "Alex B", 30, 27, 0, 17, 0, true, 1
+var brian = new Contestant(0, "Brian", 28, 20, 29, 22, 0, true, 1
 );
-var caitlin = new Contestant(1, "Caitlin", 29, 29, 25, 14, 0, true, 2
+var cam = new Contestant(1, "Cam", 20, 11, 9, 26, 0, true, 1
 );
-var hannahB = new Contestant(2, "Hannah B", 28, 30, 26, 30, 30, true, 6
+var chasen = new Contestant(2, "Chasen", 21, 1, 18, 16, 0, true, 0
 );
-var cassie = new Contestant(3, "Cassie", 27, 24, 22, 24, 29, true, 8
+var connorj = new Contestant(3, "Connor J", 8, 6, 6, 14, 0, true, 1
 );
-var caelynn = new Contestant(4, "Caelynn", 26, 25, 28, 28, 28, true, 7
+var connors = new Contestant(4, "Connor S", 23, 26, 13, 27, 0, true, 1
 );
-var demi = new Contestant(5, "Demi", 25, 21, 23, 20, 18, true, 5
+var daron = new Contestant(5, "Daron", 3, 12, 2, 5, 0, true, 1
 );
-var laura = new Contestant(6, "Laura", 24, 16, 29, 11, 27, false, 0
+var devon = new Contestant(6, "Devon", 9, 8, 25, 8, 0, false, 1
 );
-var hannahG = new Contestant(7, "Hannah G", 23, 18, 15, 27, 26, true, 8
+var dustin = new Contestant(7, "Destin", 1, 7, 7, 25, 0, true, 1
 );
-var bri = new Contestant(8, "Bri", 22, 23, 27, 22, 12, true, 2
+var dylan = new Contestant(8, "Dylan", 14, 27, 20, 13, 0, true, 1
 );
-var adrianne = new Contestant(9, "Adrianne Jane", 21, 28, 0, 6, 23, false, 0
+var garrett = new Contestant(9, "Garrett", 25, 22, 30, 24, 0, false, 1
 );
-var alexd = new Contestant(10, "Alex D", 20, 20, 20, 16, 0, false, 0
+var grant = new Contestant(10, "Grant", 4, 18, 23, 2, 0, false, 1
 );
-var catherine = new Contestant(11, "Catherine", 19, 22, 30, 25, 24, true, 2
+var hunter = new Contestant(11, "Hunter", 10, 14, 14, 4, 0, true, 0
 );
-var erin = new Contestant(12, "Erin", 18, 13, 24, 18, 16, true, 0
+var jed = new Contestant(12, "Jed", 11, 16, 22, 30, 0, true, 1
 );
-var annie = new Contestant(13, "Annie", 17, 26, 0, 29, 0, true, 1
+var joe = new Contestant(13, "Joe", 12, 19, 17, 6, 0, true, 0
 );
-var nina = new Contestant(14, "Nina", 16, 7, 17, 21, 22, true, 2
+var joey = new Contestant(14, "Joey", 27, 28, 16, 9, 0, true, 1
 );
-var kirpa = new Contestant(15, "Kirpa", 15, 9, 18, 3, 11, true, 6
+var johnpauljones = new Contestant(15, "John Paul Jones", 13, 2, 15, 17, 0, true, 1
 );
-var tracy = new Contestant(16, "Tracy", 14, 2, 19, 7, 0, true, 3
+var jonathan = new Contestant(16, "Jonathan", 5, 9, 3, 18, 0, true, 1
 );
-var sydney = new Contestant(17, "Sydney", 13, 15, 9, 8, 25, true, 5
+var kevin = new Contestant(17, "Kevin", 24, 13, 21, 7, 0, true, 1
 );
-var nicole = new Contestant(18, "Nicole", 12, 10, 14, 9, 21, true, 4
+var lukep = new Contestant(18, "Luke P", 30, 29, 27, 29, 0, true, 1
 );
-var heather = new Contestant(19, "Heather", 11, 11, 0, 5, 8, true, 6
+var lukes = new Contestant(19, "Luke S", 19, 21, 8, 23, 0, true, 1
 );
-var erika = new Contestant(20, "Erika", 10, 17, 21, 15, 20, true, 1
+var mattd = new Contestant(20, "Matt D", 26, 23, 11, 10, 0, true, 0
 );
-var elyse = new Contestant(21, "Elyse", 9, 12, 13, 23, 19, true, 4
+var matteo = new Contestant(21, "Matteo", 18, 15, 12, 21, 0, true, 1
 );
-var tayshia = new Contestant(22, "Tayshia", 8, 4, 10, 26, 13,true, 8
+var matthew = new Contestant(22, "Matthew", 29, 25, 5, 19, 0,true, 1
 );
-var revian = new Contestant(23, "Revian", 7, 3, 16, 2, 15, false, 0
+var mike = new Contestant(23, "Mike", 2, 10, 24, 20, 0, false, 1
 );
-var angelique = new Contestant(24, "Angelique", 6, 1, 0, 1, 7, true, 1 
+var peter = new Contestant(24, "Peter", 16, 24, 10, 28, 0, true, 1 
 );
-var court = new Contestant(25, "Courtney", 5, 14, 11, 13, 7, false, 3
+var ryan = new Contestant(25, "Ryan", 15, 3, 4, 15, 0, false, 0
 );
-var devin = new Contestant(26, "Devin", 4, 19, 8, 12, 17, false, 0
+var scott = new Contestant(26, "Scott", 6, 5, 1, 1, 0, false, 0
 );
-var tahzjuan = new Contestant(27, "Tahjuan", 3, 5, 0, 4, 9, false, 0
+var thomas = new Contestant(27, "Thomas", 7, 4, 26, 11, 0, false, 0
 );
-var katie = new Contestant(28, "Katie", 2, 8, 0, 10, 10, true, 5
+var tylerc = new Contestant(28, "Tyler C", 22, 30, 28, 12, 0, true, 1
 );
-var onyeka = new Contestant(29, "Onyeka", 1, 6, 0, 19, 14, true, 4
+var tylerg = new Contestant(29, "Tyler G", 17, 17, 19, 3, 0, true, 1
 );
 
 
   contestantsArray.push(
-    alexB,
-    alexd,
-    angelique,
-    annie,
-    bri,
-    caelynn,
-    caitlin,
-    cassie,
-    catherine,
-    court,
-    demi,
-    devin,
-    elyse,
-    erika,
-    erin,
-    hannahB,
-    hannahG,
-    heather,
-    adrianne,
-    katie,
-    kirpa,
-    laura,
-    nicole,
-    onyeka,
-    nina,
-    revian,
-    sydney,
-    tahzjuan,
-    tayshia,
-    tracy);
+    brian,
+    cam,
+    chasen,
+    connorj,
+    connors,
+    daron,
+    devon,
+    dustin,
+    dylan,
+    garrett,
+    grant,
+    hunter,
+    jed,
+    joe,
+    joey,
+    johnpauljones,
+    jonathan,
+    kevin,
+    lukep,
+    lukes,
+    mattd,
+    matteo,
+    matthew,
+    mike,
+    peter,
+    ryan,
+    scott,
+    thomas,
+    tylerc,
+    tylerg);
 
     //console.log(contestantsArray[0]);
 
@@ -173,14 +172,14 @@ function calculateVanessaScore(){
 }
 
 function createCalieList(){
-    var html;
+    var html = '';
     for(i=29; i <= 29 && i >= 0; i--){
         function isI(arr) { 
             return arr.calie === i+1;
         }
         var list = contestantsArray.find(isI); 
-        console.log(list);
-        if(list.weeksactive < 8){
+      
+        if(list.weeksactive < 1){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.calie + '</td></tr>';
         }
         else{
@@ -192,37 +191,16 @@ function createCalieList(){
     
 }
 
-function createVanessaList(){
-    var html;
-    for(i=29; i <= 29 && i >= 8; i--){
-       
-            function isI(arr) { 
-                return arr.vanessa === i+1;
-            }
-
-            var list = contestantsArray.find(isI); 
-
-            if(list.weeksactive < 8){
-                html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
-            }
-            else{
-                html += '<tr ><td>'+list.first + '</td><td>' + list.vanessa + '</td></tr>';
-            }
-    }
-    document.getElementById('vanessaDOMlist').innerHTML+= html;
-}
-
 function createJamesList(){
-    var html;
+    var html = '';
     for(i=29; i <= 29 && i >= 0; i--){
         function isI(arr) { 
             return arr.james === i+1;            
         }
     
         var list = contestantsArray.find(isI); 
-
-
-        if(list.weeksactive < 8){
+        console.log(list);
+        if(list.weeksactive < 1){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.james + '</td></tr>';
         }
         else{
@@ -233,13 +211,13 @@ function createJamesList(){
 }
 
 function createJessList(){
-    var html;
+    var html = '';
     for(i=29; i <= 29 && i >= 0; i--){
         function isI(arr) { 
             return arr.jess === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 8){
+        if(list.weeksactive < 1){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.jess + '</td></tr>';
         }
         else{
@@ -250,13 +228,13 @@ function createJessList(){
 }
 
 function createJaviList(){
-    var html;
-    for(i=29; i <= 29 && i >= 12; i--){
+    var html = '';
+    for(i=29; i <= 29 && i >= 0; i--){
         function isI(arr) { 
             return arr.javi === i+1;
         }
         var list = contestantsArray.find(isI); 
-        if(list.weeksactive < 8){
+        if(list.weeksactive < 1){
             html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list.javi + '</td></tr>';
         }
         else{
@@ -268,7 +246,6 @@ function createJaviList(){
 
 
 createCalieList();
-createVanessaList();
 createJamesList();
 createJessList();
 createJaviList();
