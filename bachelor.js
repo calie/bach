@@ -111,6 +111,16 @@ var onyeka = new Contestant(29, "Onyeka", 1, 6, 0, 19, 14, true, 4
 
   //console.log(contestantsArray[1].calie);
 
+  function calculateScore(player){
+    var totalScore = 0;
+    for(i=0; i < contestantsArray.length; i++){
+      if(contestantsArray[i].active){
+          totalScore = totalScore + ((contestantsArray[i].calie) * contestantsArray[i].weeksactive);
+      }  
+    }
+    return totalScore;
+}
+
 
   function calculateCalieScore(){
       var totalScore = 0;
