@@ -1,5 +1,3 @@
-var contestantsArray = [];
-
 function Contestant(id, first, caliescore, jamesscore, javiscore, jessscore, vanessascore, active, weeksactive) {
     this.id = id;
     this.first = first;
@@ -73,9 +71,7 @@ var tylerc = new Contestant(28, "Tyler C", 22, 30, 28, 12, 0, true, 2
 var tylerg = new Contestant(29, "Tyler G", 17, 17, 19, 3, 0, true, 2
 );
 
-
-  contestantsArray.push(
-    brian,
+var contestantsArray = [brian,
     cam,
     chasen,
     connorj,
@@ -104,7 +100,7 @@ var tylerg = new Contestant(29, "Tyler G", 17, 17, 19, 3, 0, true, 2
     scott,
     thomas,
     tylerc,
-    tylerg);
+    tylerg];
 
     //console.log(contestantsArray[0]);
 
