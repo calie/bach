@@ -170,7 +170,7 @@ function calculateVanessaScore(){
     return totalScore;
 }
 
-const currentWeek = 2;
+const currentWeek = 3;
 
 function createCalieList(){
     var html = '';
