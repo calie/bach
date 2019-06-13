@@ -121,16 +121,17 @@ var contestantsArray = [brian,
 console.log(calculateScore(calie));
 */
 
-  function calculateCalieScore(){
+  function calculateScore(name){
       var totalScore = 0;
       for(i=0; i < contestantsArray.length; i++){
        
-            totalScore = totalScore + ((contestantsArray[i].calie) * contestantsArray[i].weeksactive);
+            totalScore = totalScore + ((contestantsArray[i][name]) * contestantsArray[i].weeksactive);
     
       }
       return totalScore;
   }
 
+console.log(calculateScore('calie'));
 
   function calculateJamesScore(){
     var totalScore = 0;
