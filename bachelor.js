@@ -252,7 +252,7 @@ createJamesList();
 createJessList();
 createJaviList();
 
-//document.getElementById('caliescore').innerHTML = calculateCalieScore();
+document.getElementById('caliescore').innerHTML = calculateScore('calie');
 document.getElementById('jamesscore').innerHTML = calculateJamesScore();
 document.getElementById('javiscore').innerHTML = calculateJaviScore();
 document.getElementById('jessscore').innerHTML = calculateJessScore();
