@@ -131,46 +131,6 @@ console.log(calculateScore(calie));
       return totalScore;
   }
 
-console.log(calculateScore('calie'));
-
-  function calculateJamesScore(){
-    var totalScore = 0;
-    for(i=0; i < contestantsArray.length; i++){
-      if(contestantsArray[i].active){
-          totalScore = totalScore + ((contestantsArray[i].james) * contestantsArray[i].weeksactive);
-      }  
-    }
-    return totalScore;
-}
-
-function calculateJaviScore(){
-    var totalScore = 0;
-    for(i=0; i < contestantsArray.length; i++){
-      if(contestantsArray[i].active){
-          totalScore = totalScore + ((contestantsArray[i].javi) * contestantsArray[i].weeksactive);
-      }  
-    }
-    return totalScore;
-}
-function calculateJessScore(){
-    var totalScore = 0;
-    for(i=0; i < contestantsArray.length; i++){
-      if(contestantsArray[i].active){
-          totalScore = totalScore + ((contestantsArray[i].jess) * contestantsArray[i].weeksactive);
-      }  
-    }
-    return totalScore;
-}
-function calculateVanessaScore(){
-    var totalScore = 0;
-    for(i=0; i < contestantsArray.length; i++){
-      if(contestantsArray[i].active){
-          totalScore = totalScore + ((contestantsArray[i].vanessa) * contestantsArray[i].weeksactive);
-      }  
-    }
-    return totalScore;
-}
-
 const currentWeek = 3;
 
 function createCalieList(){
@@ -253,8 +213,8 @@ createJessList();
 createJaviList();
 
 document.getElementById('caliescore').innerHTML = calculateScore('calie');
-document.getElementById('jamesscore').innerHTML = calculateJamesScore();
-document.getElementById('javiscore').innerHTML = calculateJaviScore();
-document.getElementById('jessscore').innerHTML = calculateJessScore();
-document.getElementById('vscore').innerHTML = calculateVanessaScore();
+document.getElementById('jamesscore').innerHTML = calculateScore('james');
+document.getElementById('javiscore').innerHTML = calculateScore('javi');
+document.getElementById('jessscore').innerHTML = calculateScore('jess');
+document.getElementById('vscore').innerHTML = calculateScore('jess');
 
