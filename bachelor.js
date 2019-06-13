@@ -114,6 +114,26 @@ var contestantsArray = [brian,
   }
 
 const currentWeek = 3;
+function createList(name){
+     var html = '';
+    for(i=29; i <= 29 && i >= 0; i--){
+        function isI(arr) { 
+            return arr[name] === i+1;
+        }
+        var list = contestantsArray.find(isI); 
+      
+        if(list.weeksactive < currentWeek){
+            html += '<tr style="color:red"><td>'+list.first + '</td><td>' + list[name] + '</td></tr>';
+        }
+        else{
+            html += '<tr ><td>'+list.first + '</td><td>' + list[name] + '</td></tr>';
+        }
+        
+    }
+    document.getElementById(name + 'DOMlist').innerHTML+= html;
+}
+
+console.log(createList('calie'));
 
 function createCalieList(){
     var html = '';
