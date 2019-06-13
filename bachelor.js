@@ -102,24 +102,6 @@ var contestantsArray = [brian,
     tylerc,
     tylerg];
 
-    //console.log(contestantsArray[0]);
-
-  //console.log(contestantsArray[1].calie);
-
-  /*
-  const calculateScore = (player) => {
-    console.log(contestantsArray[3].player);
-    var totalScore = 0;
-    for(i=0; i < contestantsArray.length; i++){
-      if(contestantsArray[i].active){
-          totalScore = totalScore + ((parseInt(contestantsArray[i].player)) * contestantsArray[i].weeksactive);
-      }  
-    }
-    return totalScore;
-}
-
-console.log(calculateScore(calie));
-*/
 
   function calculateScore(name){
       var totalScore = 0;
